@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!--Por defaul el método es get muestra en la url los datos  lo cambiamos al post este envía los parámetros y sus valores ocultos-->
+    <form action="" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresar Nombre"> <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresar Apellido"><br>
+        <label for="correo">Email:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingresar Email"><br>
+        <label for="Password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Ingresar password"><br>
+
+        <br>
+        <hr>
+        <!--input radio permite seleccionar una opción de una lista-->
+        <input type="radio" id="femenino" name="genero" value="1">
+        <label for="femenino">Femenino</label>
+        <br>
+        <input type="radio" id="masculino" name="genero" value="2">
+        <label for="masculino">Masculino </label>
+        <br>
+        <input type="radio" id="nose" name="genero" value="3">
+        <label for="nose"> No Sé</label>
+        <br>
+
+        <!--name es para que seleccione una opción value para discriminar cual de los tres el usuario seleccionó-->
+
+
+        <!--checkbox-->
+        <br>
+        <hr>
+
+        <input type="checkbox" id="java" name="lenguaje1" value="1">
+        <label for="java">Java</label><br>
+
+        <input type="checkbox" id="js" name="lenguaje2" value="2">
+        <label for="js">Js</label><br>
+
+        <input type="checkbox" id="phyton" name="lenguaje3" value="3">
+        <label for="python">Phython</label><br>
+
+
+        <!--select-->
+        <br>
+        <hr>
+        <label for="lenguajes">Elija un lenguaje favorito:</label> <select name="lenguajes" id="lenguajes">
+            <option value="0">Seleccione un lenguaje</option>
+            <option value="1">Java</option>
+            <option value="2">javaScrip</option>
+            <option value="3">Phython</option>
+            </select>
+        <!--textarea-->
+        <br>
+        <hr>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="40" minlength="1" maxlength="20"></textarea>
+
+        <!--input oculto tipo type para validar para que el usuario no lo modifique-->
+        <br>
+        <hr>
+        <input type="hidden" name="modulo" id="modulo" value="1"> </form>
+
+    <!--button-->
+    <input type="button" id="" name="" value="validar">
+    <input type="submit" value="enviar">
+    <br>
+    <hr>
+
+</body>
+
+</html>

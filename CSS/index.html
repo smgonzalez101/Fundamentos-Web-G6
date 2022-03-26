@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTOR</title>
+
+    <style>
+        /*Aquí van todos los estilos - 3 FORMAS DE DAR ESTULO A NUSTRAS PÁGINAS*/
+        /*1era forma todos los elementos se ven afectados - etiqueta*/
+        
+        body {
+            background: silver url("assets/img/OIP.jpg") no-repeat fixed center;
+            background-size: auto;
+            background-color: aqua;
+        }
+        
+        back p {
+            color: blue;
+            background-color: blueviolet;
+        }
+        
+        div {
+            width: 400px;
+            height: 400px;
+            color: crimson;
+            background-color: darksalmon;
+        }
+        /*2da forma los elementos se ven afectados por clase - a través de class 1 o más elementos*/
+        
+        .parrafo {
+            color: aqua;
+            background-color: bisque;
+            font-size: 16 px;
+            font-style: italic;
+        }
+        
+        .web {
+            width: 400px;
+        }
+        /*3era. forma - ID  (#)*/
+        
+        #p5 {
+            color: blue;
+            background-color: coral;
+        }
+        
+        #p6 {
+            color: darkkhaki;
+            background-color: darkslategrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>parrafo 1</p>
+        <p>parrafo 2</p>
+        <p class="parrafo">parrafo 3</p>
+        <p class="parrafo">parrafo 4></p>
+        <p class="parrafo" id="p5">parrafo 5></p>
+        <p class="parrafo" id="p6">parrafo 6></p>
+    </div>
+    <br>
+    <div>
+        <img class "Web" src="assets/img/OIP.jpg " alt="Imagen CSS ">
+    </div>
+</body>
+
+</html>

@@ -14,34 +14,107 @@
     <!--título pestaña superior de la página-->
 </head>
 
-<body>
-    <!--todo lo que ve el usuario-->
-    <h1>Esto es un título desde h1 hasta h6</h1>
-    <h6>Esto es un título h6</h6>
-    <br>
-    <hr>
-    <!--salto linea-->
-    <!-- <hr> agrega una linea horizontal-->
-    <!--Parrafos es para escribir muchos parrafos-->
-    <p> <b>Pone negrilla</b>no <i>agrega cursiva al texto </i><u>sub raya el texto</u> tienen formato es solo texto con un tamaño predifinido, podemos trabajar con etiquetas internas </p>
 
-    <p><strong> pone negrita </strong>cada etiqueta ocupa una linea</p>
-    <br>
+<!--todo lo que ve el usuario  id es ara que el usuario vuelva al primer título-->
+<h1 id="titulo1">Esto es un título desde h1 hasta h6</h1>
+<h6>Esto es un título h6</h6>
+<br>
+<hr>
+<!--salto linea-->
+<!-- <hr> agrega una linea horizontal-->
+<!--Parrafos es para escribir muchos parrafos-->
+<p>
 
-    <!--ink (anchor tag) (href)</body>-->
-    <a href="https://www.w3schools.com ">w3schools</a><br>
-    <!--<a> son para hipervínculos-->
-    <!-- href, nos indica hacia que página queremos que vaya-->
+    <b>Pone negrilla</b>no <i>agrega cursiva al texto </i><u>sub raya el texto</u> tienen formato es solo texto con un tamaño predifinido, podemos trabajar con etiquetas internas
+</p>
 
-    <a href="https://www.w3schools.com " target="_blank">w3School</a>
-    <br>
-    <!--rediccionar a otra página interna -->
-    <a href="index2.html">otra página</a>
-    <br>
-    <!--link con imagen-->
-    <a href="https://www.linux.org" target="_blank">
-        <img src="assets/img/tux.jpg">
-    </a>
+<p><strong> pone negrita </strong>cada etiqueta ocupa una linea</p>
+<br>
+<hr>
+<!--ink (anchor tag) (href)</body>-->
+<a href="https://www.w3schools.com ">w3schools</a><br>
+<!--<a> son para hipervínculos-->
+<!-- href, nos indica hacia que página queremos que vaya-->
+
+<a href="https://www.w3schools.com " target="_blank ">w3School</a>
+<br>
+<hr>
+<!--rediccionar a otra página interna -->
+<a href="index2.html ">Vamos al Index 2</a>
+<br>
+<!--link con imagen-->
+<a href="https://www.linux.org " target="_blank ">
+    <img src="assets/img/tux.jpg ">
+</a>
+<br>
+<!-- link dentro de la misma página-->
+<a href="#titulo1 ">titulo</a>
+<!--listas (ordenadas ol y no ordenadas ul)-->
+<!--listas ordenadas -->
+<hr>
+<ol>
+    <li>uno</li>
+    <li>dos</li>
+    <li>tres</li>
+</ol>
+<!--listas no ordenadas -->
+<ul>
+    <li>uno</li>
+    <li>dos</li>
+    <li>tres</li>
+</ul>
+<!--listas no ordenadas con otra lista en su interior -->
+<ul>
+    <li>uno</li>
+    <ul>
+        <li>uno uno</li>
+        <ul>
+            <li>uno uno uno</li>
+            <li>uno dos tres</li>
+        </ul>
+        <li>uno dos</li>
+    </ul>
+
+
+    <li>dos</li>
+    <li>tres</li>
+</ul>
+<br>
+<hr>
+<!-- imagenes cuando son muy grandes se ponen abajo y no una al lado de la otra  el Alt si se cae el enlace aparece el nombre-->
+<img src="assets/img//tux.jpg" alt="we-work">
+<img src="assets/img/bg-hero.png" alt="bg-hero">
+<img src="assets/img/scrum-sin-scream.jpg" alt="scrum-sin-scream">
+<br>
+<hr>
+
+<!-- tablas nos muestran filas y columnas, como un excel.-->
+<table>
+    <!-- thead es la cabecera-->
+    <thead>
+        <!--tr filas-->
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+
+        <tr></tr>
+    </thead>
+
+    <!-- tbody es el cuerpo-->
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Sandra</td>
+            <td>González</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mirian</td>
+            <td>González</td>
+        </tr>
+    </tbody>
 
 </html>
 <!-- etiqueta de cierre-->
